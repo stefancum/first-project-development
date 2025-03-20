@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responzivna galerija</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container {
+            background-color: #007BFF;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #0056b3;
+            padding: 10px;
+            display: block;
+        }
+
+        .gallery-item p {
+            margin-top: 5px;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Gallery Heading</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="placeholder-image.png">
+                </div>
+                <p>Image Title</p>
+            </div>
+        </div>
+        <p style="margin-top: 20px; text-align: justify;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nisl, nec tristique sem. Cras id tellus ac mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent commodo suscipit odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies ullamcorper purus, ut lobortis tortor semper a. Nam eleifend accumsan elit, in imperdiet lacus. Nunc varius imperdiet nisi, eget pretium augue malesuada a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae, porttitor velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.
+        </p>
+    </div>
+</body>
+</html>
